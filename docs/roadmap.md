@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部（001–010）・第2部（011–020）・第3部前半（021–030）執筆済み。以降は順次追加します。
+    第1部〜第3部（001–035）・第4部前半（036–040）執筆済み。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -53,21 +53,21 @@ filter / mutate / summarise の先にある、実務で毎日使う verb 群。
 - [x] 028. 型変換（`as.numeric` / `as.character` → `astype` / `to_numeric`）
 - [x] 029. `across` で複数列に適用（`across` → agg dict / `apply`）
 - [x] 030. グループ内変換（`group_by` + `mutate` → `groupby.transform`）
-- [ ] 031. ウィンドウ関数：lag / lead / cumsum（→ `shift` / `cumsum`）
-- [ ] 032. ランク付け（`min_rank` / `dense_rank` / `row_number` → `rank`）
-- [ ] 033. 行ごと処理・rowwise（`rowwise` → `apply(axis=1)` / ベクトル化）
-- [ ] 034. ビン分割（`cut` → `pd.cut` / `qcut`）
-- [ ] 035. 欠損の補完（`coalesce` / `replace_na` / `fill` → `fillna` / `ffill`）
+- [x] 031. ウィンドウ関数：lag / lead / cumsum（→ `shift` / `cumsum`）
+- [x] 032. ランク付け（`min_rank` / `dense_rank` / `row_number` → `rank`）
+- [x] 033. 行ごと処理・rowwise（`rowwise` → `apply(axis=1)` / ベクトル化）
+- [x] 034. ビン分割（`cut` → `pd.cut` / `qcut`）
+- [x] 035. 欠損の補完（`coalesce` / `replace_na` / `fill` → `fillna` / `ffill`）
 
 ## 第4部　tidyr 整形・結合
 
 ロング／ワイドの往復と join。TFL レイアウトづくりの核心。
 
-- [ ] 036. 縦持ち化（`pivot_longer` → `melt`）
-- [ ] 037. 横持ち化（`pivot_wider` → `pivot` / `pivot_table`）
-- [ ] 038. 列の分割（`separate` / `separate_wider_*` → `str.split(expand=True)`）
-- [ ] 039. 列の結合（`unite` → `cat` / `agg`）
-- [ ] 040. 行の展開（`separate_rows` / `unnest` → `explode`）
+- [x] 036. 縦持ち化（`pivot_longer` → `melt`）
+- [x] 037. 横持ち化（`pivot_wider` → `pivot` / `pivot_table`）
+- [x] 038. 列の分割（`separate` / `separate_wider_*` → `str.split(expand=True)`）
+- [x] 039. 列の結合（`unite` → `cat` / `agg`）
+- [x] 040. 行の展開（`separate_rows` / `unnest` → `explode`）
 - [ ] 041. 内部結合（`inner_join` → `merge`）
 - [ ] 042. 左・外部結合（`left_join` / `full_join` → `merge(how=)`）
 - [ ] 043. アンチ・セミ結合（`anti_join` / `semi_join` → indicator / `isin`）

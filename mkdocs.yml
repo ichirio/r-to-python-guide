@@ -106,3 +106,14 @@ nav:
       - 028 型変換（as.numeric）: topics/topic-028.md
       - 029 across で複数列に適用: topics/topic-029.md
       - 030 グループ内変換（transform）: topics/topic-030.md
+      - 031 ウィンドウ関数（lag/lead/cumsum）: topics/topic-031.md
+      - 032 ランク付け（rank）: topics/topic-032.md
+      - 033 行ごと処理・rowwise: topics/topic-033.md
+      - 034 ビン分割（cut）: topics/topic-034.md
+      - 035 欠損の補完（coalesce/fill）: topics/topic-035.md
+  - 第4部　tidyr 整形・結合:
+      - 036 縦持ち化（pivot_longer）: topics/topic-036.md
+      - 037 横持ち化（pivot_wider）: topics/topic-037.md
+      - 038 列の分割（separate）: topics/topic-038.md
+      - 039 列の結合（unite）: topics/topic-039.md
+      - 040 行の展開（separate_rows/unnest）: topics/topic-040.md
