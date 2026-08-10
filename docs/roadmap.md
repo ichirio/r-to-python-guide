@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部〜第5部（001–065）執筆済み。次は第6部 TFL 作成。以降は順次追加します。
+    第1部〜第6部（001–085）執筆済み。残りは第7-8部（086–100）。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -103,26 +103,26 @@ filter / mutate / summarise の先にある、実務で毎日使う verb 群。
 
 Tables / Figures / Listings を Python で。出力フォーマット別。
 
-- [ ] 066. 出力テーブルの考え方（rtables / gt vs Python の選択肢）
-- [ ] 067. デモグラフィック表の組み立て
-- [ ] 068. 有害事象（AE）集計表
-- [ ] 069. シフトテーブル
-- [ ] 070. リスティング（listing）
-- [ ] 071. 見出し・スパンヘッダ・脚注
-- [ ] 072. 数値の小数点・右揃え
-- [ ] 073. `great_tables` で整形（gt 相当）
-- [ ] 074. pandas `Styler` で整形
-- [ ] 075. Word 出力（`officer` → `python-docx`）
-- [ ] 076. RTF 出力（`r2rtf` / rtfreporter → 選択肢）
-- [ ] 077. Excel 出力（`openxlsx` / `writexl` → `openpyxl` / `xlsxwriter`）
-- [ ] 078. PDF 出力（選択肢）
-- [ ] 079. 大きな表のページ分割
-- [ ] 080. 図の基本（ggplot2 → matplotlib / plotnine）
-- [ ] 081. ggplot 文法の対応（`aes` / `geom` → plotnine）
-- [ ] 082. 群別・ファセット（`facet_wrap` → subplots / plotnine）
-- [ ] 083. 複数図の配置（patchwork → subplots / gridspec）
-- [ ] 084. 図の保存（`ggsave` → `savefig`）
-- [ ] 085. KM 曲線・フォレストプロット
+- [x] 066. 出力テーブルの考え方（rtables / gt vs Python の選択肢）
+- [x] 067. デモグラフィック表の組み立て
+- [x] 068. 有害事象（AE）集計表
+- [x] 069. シフトテーブル
+- [x] 070. リスティング（listing）
+- [x] 071. 見出し・スパンヘッダ・脚注
+- [x] 072. 数値の小数点・右揃え
+- [x] 073. `great_tables` で整形（gt 相当）
+- [x] 074. pandas `Styler` で整形
+- [x] 075. Word 出力（`officer` → `python-docx`）
+- [x] 076. RTF 出力（`r2rtf` / rtfreporter → 選択肢）
+- [x] 077. Excel 出力（`openxlsx` / `writexl` → `openpyxl` / `xlsxwriter`）
+- [x] 078. PDF 出力（選択肢）
+- [x] 079. 大きな表のページ分割
+- [x] 080. 図の基本（ggplot2 → matplotlib / plotnine）
+- [x] 081. ggplot 文法の対応（`aes` / `geom` → plotnine）
+- [x] 082. 群別・ファセット（`facet_wrap` → subplots / plotnine）
+- [x] 083. 複数図の配置（patchwork → subplots / gridspec）
+- [x] 084. 図の保存（`ggsave` → `savefig`）
+- [x] 085. KM 曲線・フォレストプロット
 
 ## 第7部　プログラミング・制御・関数
 

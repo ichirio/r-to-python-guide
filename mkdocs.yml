@@ -143,3 +143,24 @@ nav:
       - 063 相関: topics/topic-063.md
       - 064 生存時間の要約（lifelines）: topics/topic-064.md
       - 065 集計値の丸め規則とSAS一致: topics/topic-065.md
+  - 第6部　TFL 作成（表・図・出力）:
+      - 066 出力テーブルの考え方: topics/topic-066.md
+      - 067 デモグラフィック表の組み立て: topics/topic-067.md
+      - 068 有害事象（AE）集計表: topics/topic-068.md
+      - 069 シフトテーブル: topics/topic-069.md
+      - 070 リスティング: topics/topic-070.md
+      - 071 見出し・スパンヘッダ・脚注: topics/topic-071.md
+      - 072 数値の小数点・右揃え: topics/topic-072.md
+      - 073 great_tables で整形: topics/topic-073.md
+      - 074 pandas Styler で整形: topics/topic-074.md
+      - 075 Word 出力（python-docx）: topics/topic-075.md
+      - 076 RTF 出力: topics/topic-076.md
+      - 077 Excel 出力: topics/topic-077.md
+      - 078 PDF 出力: topics/topic-078.md
+      - 079 大きな表のページ分割: topics/topic-079.md
+      - 080 図の基本（matplotlib/plotnine）: topics/topic-080.md
+      - 081 ggplot 文法の対応（plotnine）: topics/topic-081.md
+      - 082 群別・ファセット: topics/topic-082.md
+      - 083 複数図の配置: topics/topic-083.md
+      - 084 図の保存（savefig）: topics/topic-084.md
+      - 085 KM 曲線・フォレストプロット: topics/topic-085.md
