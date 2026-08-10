@@ -1,0 +1,86 @@
+site_name: R→Python 対応ガイド（統計・TFL実務）
+site_description: R（特に Tidyverse でのデータ加工・TFL 作成）を Python（pandas / polars）でどう書くかを、R を起点に対比する全100項目のリファレンス
+site_author: ichirio
+site_url: https://ichirio.github.io/r-to-python-guide/
+repo_url: https://github.com/ichirio/r-to-python-guide
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードへ
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードへ
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ja
+
+# 表示順は下の nav で制御する。番号は安定 ID（振り直さない）。
+# 新しい項目を書いたら docs/topics/ に追加し、この nav に 1 行足すだけ。
+nav:
+  - はじめに: index.md
+  - ロードマップ（全100項目）: roadmap.md
+  - 第1部　R→Python の勘所（まず10項目）:
+      - 001 RとPythonの考え方の違い: topics/topic-001.md
+      - 002 パイプとメソッドチェーン: topics/topic-002.md
+      - 003 データフレーム入門: topics/topic-003.md
+      - 004 パッケージ管理とimport: topics/topic-004.md
+      - 005 欠損値の扱い（NA→NaN/None/NA）: topics/topic-005.md
+      - 006 文字列結合（paste/paste0/glue→f-string）: topics/topic-006.md
+      - 007 列選択（select）: topics/topic-007.md
+      - 008 行フィルタ（filter）: topics/topic-008.md
+      - 009 列作成・変更（mutate）: topics/topic-009.md
+      - 010 グループ集約（group_by+summarise）: topics/topic-010.md

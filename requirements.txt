@@ -1,0 +1,2 @@
+# GitHub Pages のサイト生成に使う（記事内で紹介する R/Python 環境とは別物）
+mkdocs-material>=9.5
