@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部（001–010）・第2部（011–020）執筆済み。以降は順次追加します。
+    第1部（001–010）・第2部（011–020）・第3部前半（021–030）執筆済み。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -43,16 +43,16 @@ R から Python に移るときに最初に効く、発想と中核 verb。
 
 filter / mutate / summarise の先にある、実務で毎日使う verb 群。
 
-- [ ] 021. 並べ替え（`arrange` → `sort_values`）
-- [ ] 022. 件数と頻度（`count` / `n()` / `tally` → `value_counts` / `size`）
-- [ ] 023. 重複の除去（`distinct` → `drop_duplicates`）
-- [ ] 024. 上位N・スライス（`slice_max` / `top_n` / `slice` → `nlargest` / `head`）
-- [ ] 025. リネーム（`rename` → `rename`）
-- [ ] 026. 条件で値を作る（`case_when` / `if_else` → `np.select` / `np.where`）
-- [ ] 027. 値の対応付け・recode（`recode` / `case_match` → `map` / `replace`）
-- [ ] 028. 型変換（`as.numeric` / `as.character` → `astype` / `to_numeric`）
-- [ ] 029. `across` で複数列に適用（`across` → agg dict / `apply`）
-- [ ] 030. グループ内変換（`group_by` + `mutate` → `groupby.transform`）
+- [x] 021. 並べ替え（`arrange` → `sort_values`）
+- [x] 022. 件数と頻度（`count` / `n()` / `tally` → `value_counts` / `size`）
+- [x] 023. 重複の除去（`distinct` → `drop_duplicates`）
+- [x] 024. 上位N・スライス（`slice_max` / `top_n` / `slice` → `nlargest` / `head`）
+- [x] 025. リネーム（`rename` → `rename`）
+- [x] 026. 条件で値を作る（`case_when` / `if_else` → `np.select` / `np.where`）
+- [x] 027. 値の対応付け・recode（`recode` / `case_match` → `map` / `replace`）
+- [x] 028. 型変換（`as.numeric` / `as.character` → `astype` / `to_numeric`）
+- [x] 029. `across` で複数列に適用（`across` → agg dict / `apply`）
+- [x] 030. グループ内変換（`group_by` + `mutate` → `groupby.transform`）
 - [ ] 031. ウィンドウ関数：lag / lead / cumsum（→ `shift` / `cumsum`）
 - [ ] 032. ランク付け（`min_rank` / `dense_rank` / `row_number` → `rank`）
 - [ ] 033. 行ごと処理・rowwise（`rowwise` → `apply(axis=1)` / ベクトル化）

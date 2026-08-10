@@ -95,3 +95,14 @@ nav:
       - 018 数値の丸めと表示桁: topics/topic-018.md
       - 019 パーセント表記の作成: topics/topic-019.md
       - 020 正規表現の違い: topics/topic-020.md
+  - 第3部　dplyr データ加工の中核:
+      - 021 並べ替え（arrange）: topics/topic-021.md
+      - 022 件数と頻度（count）: topics/topic-022.md
+      - 023 重複の除去（distinct）: topics/topic-023.md
+      - 024 上位N・スライス（slice_max）: topics/topic-024.md
+      - 025 リネーム（rename）: topics/topic-025.md
+      - 026 条件で値を作る（case_when）: topics/topic-026.md
+      - 027 値の対応付け・recode: topics/topic-027.md
+      - 028 型変換（as.numeric）: topics/topic-028.md
+      - 029 across で複数列に適用: topics/topic-029.md
+      - 030 グループ内変換（transform）: topics/topic-030.md
