@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部〜第6部（001–085）執筆済み。残りは第7-8部（086–100）。以降は順次追加します。
+    **全100項目 執筆完了。**以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -128,23 +128,23 @@ Tables / Figures / Listings を Python で。出力フォーマット別。
 
 再利用可能なコードにするための足回り。
 
-- [ ] 086. 関数定義（`function` → `def`）
-- [ ] 087. 反復：apply 系と map（`sapply` / `purrr::map` → comprehension / `apply`）
-- [ ] 088. 条件分岐（`if` / `ifelse` → `if` / `np.where`）
-- [ ] 089. エラー処理（`tryCatch` → `try` / `except`）
-- [ ] 090. ベクトル化の考え方（`for` を避ける）
-- [ ] 091. 因子とラベル（factor levels / labels → `Categorical(ordered=True)`）
-- [ ] 092. 日付・時刻の計算（lubridate → pandas offsets）
-- [ ] 093. NULL / 欠損の安全な処理（`%||%` / `coalesce` → `or` / `fillna`）
-- [ ] 094. パイプで関数をつなぐ設計（`|>` / `%>%` → `pipe` / method chain）
-- [ ] 095. デバッグと検算のコツ
+- [x] 086. 関数定義（`function` → `def`）
+- [x] 087. 反復：apply 系と map（`sapply` / `purrr::map` → comprehension / `apply`）
+- [x] 088. 条件分岐（`if` / `ifelse` → `if` / `np.where`）
+- [x] 089. エラー処理（`tryCatch` → `try` / `except`）
+- [x] 090. ベクトル化の考え方（`for` を避ける）
+- [x] 091. 因子とラベル（factor levels / labels → `Categorical(ordered=True)`）
+- [x] 092. 日付・時刻の計算（lubridate → pandas offsets）
+- [x] 093. NULL / 欠損の安全な処理（`%||%` / `coalesce` → `or` / `fillna`）
+- [x] 094. パイプで関数をつなぐ設計（`|>` / `%>%` → `pipe` / method chain）
+- [x] 095. デバッグと検算のコツ
 
 ## 第8部　入出力・再現性・相互運用
 
 データの出し入れと、R⇔Python の橋渡し。
 
-- [ ] 096. CSV / 固定長 / 区切りの読み書き（`readr` → pandas / polars）
-- [ ] 097. SAS / SPSS / Stata の読み書き（`haven` → `pyreadstat` / pandas）
-- [ ] 098. データベース接続（`DBI` / `dbplyr` → `SQLAlchemy` / polars）
-- [ ] 099. 乱数と再現性（`set.seed` → `np.random.default_rng`）
-- [ ] 100. R⇔Python 相互運用（`reticulate` / `rpy2`）とパイプライン設計
+- [x] 096. CSV / 固定長 / 区切りの読み書き（`readr` → pandas / polars）
+- [x] 097. SAS / SPSS / Stata の読み書き（`haven` → `pyreadstat` / pandas）
+- [x] 098. データベース接続（`DBI` / `dbplyr` → `SQLAlchemy` / polars）
+- [x] 099. 乱数と再現性（`set.seed` → `np.random.default_rng`）
+- [x] 100. R⇔Python 相互運用（`reticulate` / `rpy2`）とパイプライン設計
