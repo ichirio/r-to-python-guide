@@ -63,7 +63,7 @@ pdf("figures.pdf"); print(p1); print(p2); dev.off()
 |---|---|---|
 | 図を PDF に束ねる | `pdf(); print(p); dev.off()` | `PdfPages` + `savefig` |
 | 単一図の PDF | `ggsave("f.pdf")` | `fig.savefig("f.pdf")` |
-| 表の PDF | `gt \|> gtsave(".pdf")` | HTML→PDF（WeasyPrint 等） |
+| 表の PDF | <code>gt &#124;&gt; gtsave(".pdf")</code> | HTML→PDF（WeasyPrint 等） |
 | レポート全体 | R Markdown / Quarto | Quarto / nbconvert |
 
 ## つまずきポイント

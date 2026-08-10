@@ -76,11 +76,11 @@ result <- raw |>
 
 | やりたいこと | R | Python（pandas） |
 |---|---|---|
-| つなぐ | `x \|> f() \|> g()` | `x.f().g()` |
-| 自作関数を挟む | `x \|> my_fn()` | `x.pipe(my_fn)` |
-| 引数付き自作関数 | `x \|> my_fn(k = 3)` | `x.pipe(my_fn, k=3)` |
+| つなぐ | <code>x &#124;&gt; f() &#124;&gt; g()</code> | `x.f().g()` |
+| 自作関数を挟む | <code>x &#124;&gt; my_fn()</code> | `x.pipe(my_fn)` |
+| 引数付き自作関数 | <code>x &#124;&gt; my_fn(k = 3)</code> | `x.pipe(my_fn, k=3)` |
 | 途中で列参照 | `mutate(b = a + 1)` | `.assign(b=lambda d: d["a"] + 1)` |
-| 複数行 | 改行して `\|>` | 全体を `()` で囲む |
+| 複数行 | 改行して <code>&#124;&gt;</code> | 全体を `()` で囲む |
 
 ## つまずきポイント
 

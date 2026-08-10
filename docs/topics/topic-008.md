@@ -89,7 +89,7 @@ dm |> filter(is.na(age))            # 欠損の行
 |---|---|---|---|
 | 単一条件 | `filter(x == 1)` | `query("x == 1")` | `filter(pl.col("x")==1)` |
 | AND | `filter(a, b)` | `query("a and b")` | `filter(a & b)` |
-| OR | `filter(a \| b)` | `query("a or b")` | `filter(a \| b)` |
+| OR | <code>filter(a &#124; b)</code> | `query("a or b")` | <code>filter(a &#124; b)</code> |
 | 集合 | `filter(x %in% v)` | `query("x in @v")` | `filter(pl.col("x").is_in(v))` |
 | 欠損の行 | `filter(is.na(x))` | `df[df["x"].isna()]` | `filter(pl.col("x").is_null())` |
 | 否定 | `filter(!cond)` | `query("not cond")` | `filter(~cond)` |

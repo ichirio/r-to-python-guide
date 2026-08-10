@@ -80,7 +80,7 @@ Python に `gtsummary` の定番等価物はないので、**手組み**が基�
 |---|---|---|
 | 一発生成 | `tbl_summary(by=)` / `tableone` | 手組み（定番なし） |
 | 連続行 | `summarise(mean, sd)` | `groupby.agg(["mean","std"])` |
-| カテゴリ行 | `count \|> mutate(pct)` | `groupby.size()` + 分母 |
+| カテゴリ行 | <code>count &#124;&gt; mutate(pct)</code> | `groupby.size()` + 分母 |
 | 縦に積む | `bind_rows` | `pd.concat` |
 | 群を列へ | `pivot_wider` | `pivot` |
 | Total 列 | `add_overall()` | 群なし集計を結合 |

@@ -85,7 +85,7 @@ replace_na(c(1, NA, 3), 0)                     # NA を定数に
 | 前方埋め（LOCF） | `fill(x, "down")` | `s.ffill()` | `fill_null(strategy="forward")` |
 | 後方埋め（NOCB） | `fill(x, "up")` | `s.bfill()` | `fill_null(strategy="backward")` |
 | 列優先で合成 | `coalesce(a, b)` | `a.combine_first(b)` | `pl.coalesce("a","b")` |
-| 群ごとに前方埋め | `group_by \|> fill(x)` | `groupby(k)[x].ffill()` | `fill_null(...).over(k)` |
+| 群ごとに前方埋め | <code>group_by &#124;&gt; fill(x)</code> | `groupby(k)[x].ffill()` | `fill_null(...).over(k)` |
 | 平均で埋める | `replace_na(mean(x))` | `s.fillna(s.mean())` | `fill_null(pl.mean())` |
 
 ## つまずきポイント

@@ -81,7 +81,7 @@ ae |>
 |---|---|---|
 | 被験者単位に | `distinct(arm, pt, subjid)` | `drop_duplicates([...])` |
 | 発現被験者数 | `count(arm, pt)` / `n_distinct` | `groupby([...]).nunique()` |
-| 群 N（分母） | `distinct(arm, subjid) \|> count` | `groupby("arm")["subjid"].nunique()` |
+| 群 N（分母） | <code>distinct(arm, subjid) &#124;&gt; count</code> | `groupby("arm")["subjid"].nunique()` |
 | n (%) | `sprintf` | `f"{n} ({pct:.1f}%)"` |
 | Any AE 行 | `distinct(arm, subjid)` | `drop_duplicates([arm, subjid])` |
 | SOC→PT 階層 | rtables / 行を積む | 別集計を concat |

@@ -81,7 +81,7 @@ dm |> group_by(arm) |>
 
 | やりたいこと | R | Python（pandas） | Python（polars） |
 |---|---|---|---|
-| 群平均を各行に | `group_by \|> mutate(m=mean(x))` | `groupby(k)[x].transform("mean")` | `pl.col(x).mean().over(k)` |
+| 群平均を各行に | <code>group_by &#124;&gt; mutate(m=mean(x))</code> | `groupby(k)[x].transform("mean")` | `pl.col(x).mean().over(k)` |
 | 群内偏差 | `x - mean(x)` | `x - transform("mean")` | `x - x.mean().over(k)` |
 | 群内件数 | `add_count()` / `n()` | `transform("size")` | `pl.len().over(k)` |
 | 群内順位 | `min_rank(x)` | `groupby(k)[x].rank()` | `x.rank().over(k)` |

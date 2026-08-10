@@ -77,7 +77,7 @@ dm |> count(arm, sort = TRUE) # 件数降順
 | やりたいこと | R | Python（pandas） | Python（polars） |
 |---|---|---|---|
 | 1 列の度数 | `count(x)` | `df["x"].value_counts()` | `df["x"].value_counts()` |
-| 割合 | `count(x) \|> mutate(p=n/sum(n))` | `value_counts(normalize=True)` | — |
+| 割合 | <code>count(x) &#124;&gt; mutate(p=n/sum(n))</code> | `value_counts(normalize=True)` | — |
 | 複数キー | `count(a, b)` | `groupby(["a","b"]).size()` | `group_by(["a","b"]).len()` |
 | 件数降順 | `count(x, sort=TRUE)` | `value_counts()`（既定） | `value_counts(sort=True)` |
 | 欠損も数える | 既定で数える | `value_counts(dropna=False)` | 既定で数える |

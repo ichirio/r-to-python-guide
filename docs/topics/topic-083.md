@@ -66,7 +66,7 @@ p1 / p2                 # 縦積み
 
 | やりたいこと | patchwork（R） | matplotlib |
 |---|---|---|
-| 横並び | `p1 \| p2` | `subplots(1, 2)` / mosaic `"AB"` |
+| 横並び | <code>p1 &#124; p2</code> | `subplots(1, 2)` / mosaic `"AB"` |
 | 縦積み | `p1 / p2` | `subplots(2, 1)` / mosaic `"A\nB"` |
 | 混在レイアウト | `(p1 + p2) / p3` | `subplot_mosaic("AB\nCC")` |
 | セル結合 | — | `GridSpec` のスライス |

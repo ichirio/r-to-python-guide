@@ -82,10 +82,10 @@ dm2 |>
 
 | やりたいこと | R | Python（pandas） |
 |---|---|---|
-| 結合→群集計 | `join \|> group_by \|> summarise` | `merge(...).groupby(...).agg(...)` |
-| 先に群内集計→結合 | `group_by(id) \|> summarise \|> left_join` | `groupby(id).agg().merge(...)` |
-| 集計値を元表に戻す | `group_by \|> mutate` | `groupby().transform()`（→ [030](topic-030.md)） |
-| 件数付きで結合 | `add_count() \|> join` | `groupby().size()` を merge |
+| 結合→群集計 | <code>join &#124;&gt; group_by &#124;&gt; summarise</code> | `merge(...).groupby(...).agg(...)` |
+| 先に群内集計→結合 | <code>group_by(id) &#124;&gt; summarise &#124;&gt; left_join</code> | `groupby(id).agg().merge(...)` |
+| 集計値を元表に戻す | <code>group_by &#124;&gt; mutate</code> | `groupby().transform()`（→ [030](topic-030.md)） |
+| 件数付きで結合 | <code>add_count() &#124;&gt; join</code> | `groupby().size()` を merge |
 
 ## つまずきポイント
 

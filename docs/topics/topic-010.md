@@ -104,12 +104,12 @@ dm |>
 
 | やりたいこと | R（dplyr） | Python（pandas） | Python（polars） |
 |---|---|---|---|
-| 群化して集約 | `group_by(g) \|> summarise(...)` | `groupby("g").agg(...)` | `group_by("g").agg(...)` |
+| 群化して集約 | <code>group_by(g) &#124;&gt; summarise(...)</code> | `groupby("g").agg(...)` | `group_by("g").agg(...)` |
 | 行数 | `n()` | `("col","size")` | `pl.len()` |
 | 非欠損数 | `sum(!is.na(x))` | `("x","count")` | `pl.col("x").count()` |
 | 平均（欠損無視） | `mean(x, na.rm=TRUE)` | `("x","mean")`（既定） | `pl.col("x").mean()` |
 | 群キーを列に戻す | 既定で列 | `.reset_index()` | 既定で列 |
-| 群内で畳まず付与 | `group_by \|> mutate` | `groupby().transform` | `over(...)` |
+| 群内で畳まず付与 | <code>group_by &#124;&gt; mutate</code> | `groupby().transform` | `over(...)` |
 
 ## つまずきポイント
 

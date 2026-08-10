@@ -82,7 +82,7 @@ dm |> group_by(arm) |> slice_max(weight, n = 1)  # 群ごとの最大
 | 値で下位 N | `slice_min(x, n=1)` | `nsmallest(1, "x")` | `bottom_k(1, by="x")` |
 | 先頭 N 行 | `slice_head(n=2)` | `head(2)` / `iloc[:2]` | `head(2)` |
 | 末尾 N 行 | `slice_tail(n=2)` | `tail(2)` / `iloc[-2:]` | `tail(2)` |
-| 群ごとの最大行 | `group_by \|> slice_max(n=1)` | `loc[groupby(k)[c].idxmax()]` | `sort().group_by(k).first()` |
+| 群ごとの最大行 | <code>group_by &#124;&gt; slice_max(n=1)</code> | `loc[groupby(k)[c].idxmax()]` | `sort().group_by(k).first()` |
 | 位置指定 | `slice(1:2)` | `iloc[0:2]` | `slice(0, 2)` |
 
 ## つまずきポイント

@@ -68,7 +68,7 @@ coalesce(c(1, NA, 3), 0)  # ベクトルの欠損を埋める → 1 0 3
 
 | やりたいこと | R | Python |
 |---|---|---|
-| None なら既定 | `x %\|\|% default` | `x if x is not None else default` |
+| None なら既定 | <code>x %&#124;&#124;% default</code> | `x if x is not None else default` |
 | 列の欠損を埋める | `coalesce(x, 0)` | `s.fillna(0)` |
 | 列優先で合成 | `coalesce(a, b)` | `a.combine_first(b)` |
 | None か判定 | `is.null(x)` | `x is None` |

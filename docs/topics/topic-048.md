@@ -96,7 +96,7 @@ dm2 |> left_join(dup, by = "subjid", relationship = "one-to-one")
 |---|---|---|---|
 | 1対1を保証 | `relationship="one-to-one"` | `validate="one_to_one"` | `validate="1:1"` |
 | 多対一を保証 | `relationship="many-to-one"` | `validate="many_to_one"` | `validate="m:1"` |
-| 重複キー確認 | `count(k) \|> filter(n>1)` | `df[k].duplicated()` | `col.is_duplicated()` |
+| 重複キー確認 | <code>count(k) &#124;&gt; filter(n&gt;1)</code> | `df[k].duplicated()` | `col.is_duplicated()` |
 | 重複時の挙動 | `multiple=` | 事前に一意化 | 事前に一意化 |
 
 ## つまずきポイント

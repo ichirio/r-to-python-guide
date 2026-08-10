@@ -79,7 +79,7 @@ w |> mutate(m = rowMeans(across(c(a, b, cc))))
 | 行平均 | `rowMeans(across(cols))` | `df[cols].mean(axis=1)` | `pl.mean_horizontal(cols)` |
 | 行合計 | `rowSums(across(cols))` | `df[cols].sum(axis=1)` | `pl.sum_horizontal(cols)` |
 | 行最大 | `pmax(...)` | `df[cols].max(axis=1)` | `pl.max_horizontal(cols)` |
-| 任意の行処理 | `rowwise() \|> mutate()` | `df.apply(f, axis=1)` | `map_rows` / struct |
+| 任意の行処理 | <code>rowwise() &#124;&gt; mutate()</code> | `df.apply(f, axis=1)` | `map_rows` / struct |
 | 行ごと欠損数 | — | `df.isna().sum(axis=1)` | — |
 
 ## つまずきポイント
