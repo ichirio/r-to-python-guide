@@ -127,3 +127,14 @@ nav:
       - 048 結合キーの検証: topics/topic-048.md
       - 049 集計してから結合: topics/topic-049.md
       - 050 ロング／ワイド実務パターン（TFL整形）: topics/topic-050.md
+  - 第5部　集計・統計・要約（TFL向け）:
+      - 051 記述統計の一括（describe）: topics/topic-051.md
+      - 052 連続変数の要約: topics/topic-052.md
+      - 053 カテゴリの頻度と割合: topics/topic-053.md
+      - 054 クロス集計表（crosstab）: topics/topic-054.md
+      - 055 群別 N・mean(sd) のデモグラ表: topics/topic-055.md
+      - 056 欠損数の集計: topics/topic-056.md
+      - 057 n (%) 整形のパターン: topics/topic-057.md
+      - 058 中央値[Q1,Q3]/min–max の整形: topics/topic-058.md
+      - 059 二値の比率と信頼区間: topics/topic-059.md
+      - 060 t検定・Wilcoxon: topics/topic-060.md

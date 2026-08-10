@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部〜第4部（001–050）執筆済み。ちょうど半分。以降は順次追加します。
+    第1部〜第4部（001–050）・第5部前半（051–060）執筆済み。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -83,16 +83,16 @@ filter / mutate / summarise の先にある、実務で毎日使う verb 群。
 
 デモグラ表・AE 表の中身。数値の作り方と丸め。
 
-- [ ] 051. 記述統計の一括（`summary` → `describe`）
-- [ ] 052. 連続変数の要約（`mean` / `sd` / `median` / `quantile` → `agg`）
-- [ ] 053. カテゴリの頻度と割合（`table` / `prop.table` → `value_counts` / `crosstab`）
-- [ ] 054. クロス集計表（`xtabs` / `table` → `crosstab` / `pivot_table`）
-- [ ] 055. 群別 N・mean(sd) のデモグラ表
-- [ ] 056. 欠損数の集計（`sum(is.na)` → `isna().sum`）
-- [ ] 057. `n (%)` 整形のパターン
-- [ ] 058. 中央値 [Q1, Q3] / min–max の整形
-- [ ] 059. 二値の比率と信頼区間
-- [ ] 060. t検定・Wilcoxon（`t.test` / `wilcox.test` → `scipy.stats`）
+- [x] 051. 記述統計の一括（`summary` → `describe`）
+- [x] 052. 連続変数の要約（`mean` / `sd` / `median` / `quantile` → `agg`）
+- [x] 053. カテゴリの頻度と割合（`table` / `prop.table` → `value_counts` / `crosstab`）
+- [x] 054. クロス集計表（`xtabs` / `table` → `crosstab` / `pivot_table`）
+- [x] 055. 群別 N・mean(sd) のデモグラ表
+- [x] 056. 欠損数の集計（`sum(is.na)` → `isna().sum`）
+- [x] 057. `n (%)` 整形のパターン
+- [x] 058. 中央値 [Q1, Q3] / min–max の整形
+- [x] 059. 二値の比率と信頼区間
+- [x] 060. t検定・Wilcoxon（`t.test` / `wilcox.test` → `scipy.stats`）
 - [ ] 061. カイ二乗・Fisher（`chisq.test` / `fisher.test` → `scipy.stats`）
 - [ ] 062. 分散分析・線形回帰（`lm` / `aov` → `statsmodels`）
 - [ ] 063. 相関（`cor` / `cor.test` → `corr` / `scipy`）
