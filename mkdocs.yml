@@ -84,3 +84,14 @@ nav:
       - 008 行フィルタ（filter）: topics/topic-008.md
       - 009 列作成・変更（mutate）: topics/topic-009.md
       - 010 グループ集約（group_by+summarise）: topics/topic-010.md
+  - 第2部　文字列と書式:
+      - 011 文字列の抽出・長さ: topics/topic-011.md
+      - 012 検索と置換: topics/topic-012.md
+      - 013 パターン検出・抽出: topics/topic-013.md
+      - 014 分割と連結: topics/topic-014.md
+      - 015 大文字小文字・前後空白: topics/topic-015.md
+      - 016 書式付き数値・sprintf: topics/topic-016.md
+      - 017 ゼロ埋め・桁揃え: topics/topic-017.md
+      - 018 数値の丸めと表示桁: topics/topic-018.md
+      - 019 パーセント表記の作成: topics/topic-019.md
+      - 020 正規表現の違い: topics/topic-020.md

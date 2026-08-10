@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部（001–010）執筆済み。以降は順次追加します。
+    第1部（001–010）・第2部（011–020）執筆済み。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -28,16 +28,16 @@ R から Python に移るときに最初に効く、発想と中核 verb。
 
 臨床の表づくりは文字列整形が半分。stringr / glue の使い分けから。
 
-- [ ] 011. 文字列の抽出・長さ（`substr` / `str_sub` / `nchar` → slice / `len` / `.str`）
-- [ ] 012. 検索と置換（`gsub` / `sub` / `str_replace` → `re.sub` / `str.replace`）
-- [ ] 013. パターン検出・抽出（`grepl` / `str_detect` / `str_extract` → `str.contains` / `str.extract`）
-- [ ] 014. 分割と連結（`strsplit` / `str_split`, collapse → `split` / `join`）
-- [ ] 015. 大文字小文字・前後空白（`toupper` / `str_to_*` / `str_trim` → `upper` / `strip`）
-- [ ] 016. 書式付き数値・`sprintf`（`sprintf` / `formatC` / `format` → format spec）
-- [ ] 017. ゼロ埋め・桁揃え（`formatC` / `str_pad` → `zfill` / `rjust`）
-- [ ] 018. 数値の丸めと表示桁（`round` / `signif` / `formatC` → `round` / `format`、丸め方式）
-- [ ] 019. パーセント表記の作成（`n (xx.x%)` の組み立て）
-- [ ] 020. 正規表現の違い（R の regex 系 vs Python `re` の作法）
+- [x] 011. 文字列の抽出・長さ（`substr` / `str_sub` / `nchar` → slice / `len` / `.str`）
+- [x] 012. 検索と置換（`gsub` / `sub` / `str_replace` → `re.sub` / `str.replace`）
+- [x] 013. パターン検出・抽出（`grepl` / `str_detect` / `str_extract` → `str.contains` / `str.extract`）
+- [x] 014. 分割と連結（`strsplit` / `str_split`, collapse → `split` / `join`）
+- [x] 015. 大文字小文字・前後空白（`toupper` / `str_to_*` / `str_trim` → `upper` / `strip`）
+- [x] 016. 書式付き数値・`sprintf`（`sprintf` / `formatC` / `format` → format spec）
+- [x] 017. ゼロ埋め・桁揃え（`formatC` / `str_pad` → `zfill` / `rjust`）
+- [x] 018. 数値の丸めと表示桁（`round` / `signif` / `formatC` → `round` / `format`、丸め方式）
+- [x] 019. パーセント表記の作成（`n (xx.x%)` の組み立て）
+- [x] 020. 正規表現の違い（R の regex 系 vs Python `re` の作法）
 
 ## 第3部　dplyr データ加工の中核
 
