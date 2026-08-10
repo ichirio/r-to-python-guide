@@ -117,3 +117,13 @@ nav:
       - 038 列の分割（separate）: topics/topic-038.md
       - 039 列の結合（unite）: topics/topic-039.md
       - 040 行の展開（separate_rows/unnest）: topics/topic-040.md
+      - 041 内部結合（inner_join）: topics/topic-041.md
+      - 042 左・外部結合（left_join/full_join）: topics/topic-042.md
+      - 043 アンチ・セミ結合: topics/topic-043.md
+      - 044 縦結合・横結合（bind_rows/cols）: topics/topic-044.md
+      - 045 クロス結合・総当たり: topics/topic-045.md
+      - 046 欠けた組合せを補完（complete）: topics/topic-046.md
+      - 047 ルックアップで値付与: topics/topic-047.md
+      - 048 結合キーの検証: topics/topic-048.md
+      - 049 集計してから結合: topics/topic-049.md
+      - 050 ロング／ワイド実務パターン（TFL整形）: topics/topic-050.md

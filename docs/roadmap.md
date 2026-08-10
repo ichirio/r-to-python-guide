@@ -4,7 +4,7 @@ R（Tidyverse・TFL）を Python でどう書くかを、R を起点にまとめ
 `[x]` は執筆済み。**番号は安定 ID**（振り直さない）で、表示順は必要に応じて `nav` 側だけ変えます。
 
 !!! info "進捗"
-    第1部〜第3部（001–035）・第4部前半（036–040）執筆済み。以降は順次追加します。
+    第1部〜第4部（001–050）執筆済み。ちょうど半分。以降は順次追加します。
     「この項目を先に」というリクエストがあれば優先して書けます。
 
 ---
@@ -68,16 +68,16 @@ filter / mutate / summarise の先にある、実務で毎日使う verb 群。
 - [x] 038. 列の分割（`separate` / `separate_wider_*` → `str.split(expand=True)`）
 - [x] 039. 列の結合（`unite` → `cat` / `agg`）
 - [x] 040. 行の展開（`separate_rows` / `unnest` → `explode`）
-- [ ] 041. 内部結合（`inner_join` → `merge`）
-- [ ] 042. 左・外部結合（`left_join` / `full_join` → `merge(how=)`）
-- [ ] 043. アンチ・セミ結合（`anti_join` / `semi_join` → indicator / `isin`）
-- [ ] 044. 縦結合・横結合（`bind_rows` / `bind_cols` → `concat`）
-- [ ] 045. クロス結合・総当たり（`cross_join` / `expand_grid` → `merge(how="cross")`）
-- [ ] 046. 欠けた組合せを補完（`complete` / `expand` → `reindex`）
-- [ ] 047. ルックアップで値付与（`left_join` lookup → `map`）
-- [ ] 048. 結合キーの検証（多対多・重複チェック）
-- [ ] 049. 集計してから結合（join + summarise）
-- [ ] 050. ロング／ワイドを行き来する実務パターン（TFL整形）
+- [x] 041. 内部結合（`inner_join` → `merge`）
+- [x] 042. 左・外部結合（`left_join` / `full_join` → `merge(how=)`）
+- [x] 043. アンチ・セミ結合（`anti_join` / `semi_join` → indicator / `isin`）
+- [x] 044. 縦結合・横結合（`bind_rows` / `bind_cols` → `concat`）
+- [x] 045. クロス結合・総当たり（`cross_join` / `expand_grid` → `merge(how="cross")`）
+- [x] 046. 欠けた組合せを補完（`complete` / `expand` → `reindex`）
+- [x] 047. ルックアップで値付与（`left_join` lookup → `map`）
+- [x] 048. 結合キーの検証（多対多・重複チェック）
+- [x] 049. 集計してから結合（join + summarise）
+- [x] 050. ロング／ワイドを行き来する実務パターン（TFL整形）
 
 ## 第5部　集計・統計・要約（TFL向け）
 
