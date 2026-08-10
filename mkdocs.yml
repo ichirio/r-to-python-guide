@@ -138,3 +138,8 @@ nav:
       - 058 中央値[Q1,Q3]/min–max の整形: topics/topic-058.md
       - 059 二値の比率と信頼区間: topics/topic-059.md
       - 060 t検定・Wilcoxon: topics/topic-060.md
+      - 061 カイ二乗・Fisher: topics/topic-061.md
+      - 062 分散分析・線形回帰: topics/topic-062.md
+      - 063 相関: topics/topic-063.md
+      - 064 生存時間の要約（lifelines）: topics/topic-064.md
+      - 065 集計値の丸め規則とSAS一致: topics/topic-065.md
